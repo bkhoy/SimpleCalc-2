@@ -13,7 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var display : UILabel!
     
     var isNumberPressed = false
-    var keepTrackKeys = []
+    var keepTrackKeys = [Double]()
+    var num1 = 0.0
+    var num2 = 0.0
+    
     var showValue : Double {
         get {
             return NSNumberFormatter ().numberFromString(display.text!)!.doubleValue
@@ -22,7 +25,6 @@ class ViewController: UIViewController {
             isNumberPressed = false
         }
     }
-    
     
     @IBAction func numberPressed (sender: UIButton) {
         let digit = sender.currentTitle!
@@ -36,21 +38,31 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func enter() {
+        isNumberPressed = false
+        keepTrackKeys.append(showValue)
+    }
+    
     
     @IBAction func clear () {
         showValue = 0
-        display.text = "\(showValue)"
+        display.text = "\(Int(showValue))"
     }
     
     @IBAction func operate (sender: UIButton) {
         let operation = sender.currentTitle!
-        
+        num1 = showValue
+
+        if isNumberPressed {
+            enter()
+        }
+
         switch operation {
-            case "+": display.text ("\(num1 + num2) ")
-            case "-": display.text ("\(num1 - num2) ")
-            case "*": display.text ("\(num1 * num2) ")
-            case "/": display.text ("\(num1 / num2) ")
-            case "%": display.text ("\(num1 % num2) ")
+            case "+": display.text = "\(num1 + showValue)"
+            case "-": display.text = "\(num1 - showValue)"
+            case "x": display.text = "\(num1 * showValue)"
+            case "/": display.text = "\(num1 / showValue)"
+            case "%": display.text = "\(num1 % showValue)"
         default: break
         }
     }
