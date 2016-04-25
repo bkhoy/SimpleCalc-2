@@ -13,9 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var display : UILabel!
     
     var isNumberPressed = false
-    var keepTrackKeys = [Double]()
-    var num1 = 0.0
-    var num2 = 0.0
+    var enterOperation = true
+    var op1 : String = ""
+    var numbers = [Double]()
+    var result : Double = 0.0
+    var num1 : Double = 0.0
     
     var showValue : Double {
         get {
@@ -38,33 +40,72 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func enter() {
+    func enter() {
         isNumberPressed = false
-        keepTrackKeys.append(showValue)
+        numbers.append(showValue)
     }
     
     
     @IBAction func clear () {
         showValue = 0
         display.text = "\(Int(showValue))"
+        isNumberPressed = false
+        enterOperation = true
+        op1 = ""
+        numbers = [Double]()
+        result = 0.0
+        num1 = 0.0
     }
     
+    var average : Int = 0
+    
     @IBAction func operate (sender: UIButton) {
-        let operation = sender.currentTitle!
-        num1 = showValue
-
         if isNumberPressed {
             enter()
         }
-
-        switch operation {
-            case "+": display.text = "\(num1 + showValue)"
-            case "-": display.text = "\(num1 - showValue)"
-            case "x": display.text = "\(num1 * showValue)"
-            case "/": display.text = "\(num1 / showValue)"
-            case "%": display.text = "\(num1 % showValue)"
-        default: break
+        
+        if enterOperation {
+            op1 = sender.currentTitle!
+            enterOperation = false
+            
+        } else {
+        
+            num1 = numbers[0]
+        
+            if numbers.count > 1 {
+                switch op1 {
+                    case "+": result = numbers[0] + numbers[1]
+                    case "-": result = numbers[0] - numbers[1]
+                    case "x": result = numbers[0] * numbers[1]
+                    case "/": result = numbers[0] / numbers[1]
+                    case "%": result = numbers[0] % numbers[1]
+                    case "AVG": result = avg(numbers)
+                    case "COUNT": result = Double(numbers.count)
+                default: break
+                }
+            }
+            display.text = "\(result)"
         }
+        
+    }
+    
+    func avg(values : [Double]) -> Double {
+        var total = 0.0
+        for value in values {
+            total += Double(value)
+        }
+        return total/Double(values.count)
+    }
+
+    
+    @IBAction func fact(sender: UIButton) {
+        var number = Int(showValue)
+        var answer = number
+        while number > 1 {
+            number -= 1
+            answer *= number
+        }
+        display.text = "\(answer)"
     }
     
     override func viewDidLoad() {

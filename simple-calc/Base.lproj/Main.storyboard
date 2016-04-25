@@ -30,6 +30,9 @@
                                 <state key="normal" title="AVG">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="56Z-k9-Umv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrO-z9-ioX">
                                 <rect key="frame" x="97" y="106" width="55" height="55"/>
@@ -37,6 +40,9 @@
                                 <state key="normal" title="COUNT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DzH-YO-Ogi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKu-sL-7iO">
                                 <rect key="frame" x="160" y="106" width="55" height="55"/>
@@ -44,6 +50,9 @@
                                 <state key="normal" title="FACT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="fact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Tw-Ws-jtT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rb-25-edA">
                                 <rect key="frame" x="226" y="106" width="55" height="55"/>
@@ -59,7 +68,7 @@
                                 <rect key="frame" x="34" y="169" width="55" height="55"/>
                                 <color key="backgroundColor" red="0.76153468589999995" green="0.76153468589999995" blue="0.76153468589999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="7">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LOn-Fg-fGX"/>
@@ -69,7 +78,7 @@
                                 <rect key="frame" x="160" y="169" width="55" height="55"/>
                                 <color key="backgroundColor" red="0.76153468589999995" green="0.76153468589999995" blue="0.76153468589999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="9">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XuV-b9-uB9"/>
@@ -89,7 +98,7 @@
                                 <rect key="frame" x="97" y="232" width="55" height="55"/>
                                 <color key="backgroundColor" red="0.76153468589999995" green="0.76153468589999995" blue="0.76153468589999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="5">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tOg-If-DsE"/>
@@ -99,7 +108,7 @@
                                 <rect key="frame" x="160" y="232" width="55" height="55"/>
                                 <color key="backgroundColor" red="0.76153468589999995" green="0.76153468589999995" blue="0.76153468589999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="6">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lhI-Dr-A5l"/>
@@ -119,7 +128,7 @@
                                 <rect key="frame" x="34" y="295" width="55" height="55"/>
                                 <color key="backgroundColor" red="0.76153468589999995" green="0.76153468589999995" blue="0.76153468589999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="1">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MbR-1R-Z93"/>
@@ -129,7 +138,7 @@
                                 <rect key="frame" x="97" y="295" width="55" height="55"/>
                                 <color key="backgroundColor" red="0.76153468589999995" green="0.76153468589999995" blue="0.76153468589999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="2">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lvY-xO-yFd"/>
@@ -139,7 +148,7 @@
                                 <rect key="frame" x="160" y="295" width="55" height="55"/>
                                 <color key="backgroundColor" red="0.76153468589999995" green="0.76153468589999995" blue="0.76153468589999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="3">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pm8-s9-AS3"/>
@@ -172,14 +181,14 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="enter" destination="BYZ-38-t0r" eventType="touchUpInside" id="eVU-mM-Ab0"/>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QGM-Wk-kaS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6m-dG-BcF">
                                 <rect key="frame" x="34" y="232" width="55" height="55"/>
                                 <color key="backgroundColor" red="0.76153468589999995" green="0.76153468589999995" blue="0.76153468589999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="4">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NOi-0h-1xv"/>
@@ -189,7 +198,7 @@
                                 <rect key="frame" x="97" y="169" width="55" height="55"/>
                                 <color key="backgroundColor" red="0.76153468589999995" green="0.76153468589999995" blue="0.76153468589999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="8">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K6U-uN-dKx"/>
