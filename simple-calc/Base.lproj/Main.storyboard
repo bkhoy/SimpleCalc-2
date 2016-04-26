@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="LNz-z1-h9u">
-                                <rect key="frame" x="34" y="39" width="247" height="52"/>
-                                <color key="backgroundColor" red="0.47506953534031415" green="0.47506953534031415" blue="0.47506953534031415" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9q-3E-c5T">
                                 <rect key="frame" x="34" y="106" width="55" height="55"/>
                                 <color key="backgroundColor" red="0.82943390052356014" green="0.54457326185255417" blue="0.6999275871007985" alpha="1" colorSpace="calibratedRGB"/>
@@ -230,9 +223,16 @@
                                 </state>
                                 <connections>
                                     <action selector="DisplayHistory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KyX-fz-ibO"/>
-                                    <segue destination="cJD-jF-zfh" kind="push" id="Xnn-MR-RBR"/>
+                                    <segue destination="cJD-jF-zfh" kind="push" id="ny0-em-nTe"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="LNz-z1-h9u">
+                                <rect key="frame" x="34" y="40" width="247" height="52"/>
+                                <color key="backgroundColor" red="0.47506953534031415" green="0.47506953534031415" blue="0.47506953534031415" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.14901960784313725" green="0.8901960784313725" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -242,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="187" y="379"/>
+            <point key="canvasLocation" x="188" y="379"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7xi-b6-xdI">
@@ -276,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xye-Ws-k9N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="630" y="379"/>
+            <point key="canvasLocation" x="794" y="379"/>
         </scene>
     </scenes>
 </document>

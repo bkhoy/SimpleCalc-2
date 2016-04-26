@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     var num1 : Double = 0.0
     
     //History values
-    var showHistory : String = ""
+    var showHistory : String = "History"
     var history = [String]()
     
     var showValue : Double {
