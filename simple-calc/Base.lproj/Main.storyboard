@@ -229,6 +229,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="DisplayHistory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KyX-fz-ibO"/>
                                     <segue destination="cJD-jF-zfh" kind="push" id="Xnn-MR-RBR"/>
                                 </connections>
                             </button>
@@ -262,6 +263,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HISTORY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2N-Y1-7cG">
+                                <rect key="frame" x="89" y="28" width="146" height="162"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.14901960780000001" green="0.89019607840000003" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>

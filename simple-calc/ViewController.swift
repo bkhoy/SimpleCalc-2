@@ -12,12 +12,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var display : UILabel!
     
+    //Regular calculator
     var isNumberPressed = false
     var enterOperation = true
     var op1 : String = ""
     var numbers = [Double]()
     var result : Double = 0.0
     var num1 : Double = 0.0
+    
+    //History values
+    var showHistory : String = ""
+    var history = [String]()
     
     var showValue : Double {
         get {
@@ -107,6 +112,23 @@ class ViewController: UIViewController {
         }
         display.text = "\(answer)"
     }
+    
+    //Shows history view
+    @IBAction func DisplayHistory(sender: UIButton) {
+        for i in 0..<history.count {
+            showHistory += (history[i] + "\n")
+        }
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "HistorySegue") {
+            let DestViewController: HistoryView = segue.destinationViewController as! HistoryView
+            DestViewController.historyResults = showHistory
+
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
